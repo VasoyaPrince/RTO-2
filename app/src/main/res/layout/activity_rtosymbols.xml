@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/fontmedium"
+            android:gravity="center"
+            android:text="RTO Symbols &amp; Sign"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/adMobView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/_8sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+
+            <LinearLayout
+                android:id="@+id/roadsingnals_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_trafficroadsign" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Road &amp; Signals"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_9sdp"
+                    android:scaleX="-1"
+                    android:src="@drawable/ic_right"
+                    android:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trafficpolice_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_trafficc" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Traffic Rules"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_9sdp"
+                    android:scaleX="-1"
+                    android:src="@drawable/ic_right"
+                    android:tint="@color/gray" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/drivingrules_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_drivingrules" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Driving "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_9sdp"
+                    android:scaleX="-1"
+                    android:src="@drawable/ic_right"
+                    android:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/informatory_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_parkinginfo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Symbol Informatory"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_9sdp"
+                    android:scaleX="-1"
+                    android:src="@drawable/ic_right"
+                    android:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mandatory_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_signman" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Symbol Mandatory"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_9sdp"
+                    android:scaleX="-1"
+                    android:src="@drawable/ic_right"
+                    android:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cautionary_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_symbolcau" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fontmedium"
+                    android:text="Symbol Cautionary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_9sdp"
+                    android:scaleX="-1"
+                    android:src="@drawable/ic_right"
+                    android:tint="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/adMobView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical" />
+</LinearLayout>

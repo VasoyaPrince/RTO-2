@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#b5b5b5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.ads.MediaView
+                android:id="@+id/native_ad_media"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:src="@color/colorAccent" />
+
+            <TextView
+                style="@style/AppTheme_AdAttribution"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ad_choices_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.facebook.ads.MediaView
+                    android:id="@+id/native_ad_icon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/native_ad_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/adfont"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/native_ad_sponsored_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/adfont"
+                        android:lines="1"
+                        android:text="Sponsored"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/native_ad_social_context"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/adfont"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/native_ad_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/adfont"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonad">
+
+            <TextView
+                android:id="@+id/native_ad_call_to_action"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/adfont"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

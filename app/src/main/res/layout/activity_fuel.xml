@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_240sdp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <LinearLayout
+        android:id="@+id/first_part1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_back"
+            android:text="Vehicle Details"
+            android:textColor="@color/black"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center|right"
+            android:padding="@dimen/_7sdp"
+            android:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_part1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/eclips"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_petrol" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/fontmedium"
+            android:text="Fuel City"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_part"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#FBFBFB"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_3sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_17sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/fontmedium"
+                            android:text="Petrol"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_33sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/detail_text_back"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/petrol_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/fontmedium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text="XYZ"
+                                android:textColor="@color/colorPrimary"
+                                android:visibility="gone"
+                                android:textSize="@dimen/_11ssp" />
+                            <ProgressBar
+                                android:id="@+id/petrol_progress"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/fontmedium"
+                            android:text="Diesel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_33sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/detail_text_back"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/diesel_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/detail_text_back"
+                                android:fontFamily="@font/fontmedium"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text="XYZ"
+                                android:textColor="@color/colorPrimary"
+                                android:visibility="gone"
+                                android:textSize="@dimen/_11ssp" />
+                            <ProgressBar
+                                android:id="@+id/diesel_progress"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_change_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:background="@drawable/bg_searchtext"
+                    android:gravity="center"
+                    android:text="Change City"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/bg_scroll"
+                android:elevation="@dimen/_1sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="center_vertical"
+                    android:text="Petrol"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/bg_petrolprice"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/petrol_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontnormal"
+                        android:text="75.00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/petrol_progress1"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="center_vertical"
+                    android:text="Diesel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_petrolprice"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/diesel_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontnormal"
+                        android:text="75.00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/diesel_progress1"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_change_city1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/fontnormal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:text="Change City"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <FrameLayout
+                    android:id="@+id/fb_native_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--                                    <include layout="@layout/ad_unified" />-->
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

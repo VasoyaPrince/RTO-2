@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loaderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+        android:id="@+id/cfl_progress"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:visibility="gone"
+        app:cfl_border="true"
+        app:cfl_border_width="@dimen/_2sdp"
+        app:cfl_wave_amplitude="0.04"
+        app:cfl_wave_color="?attr/colorPrimaryDark" />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/lav_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_150sdp"-->
+<!--        android:layout_marginBottom="@dimen/_7sdp"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_fileName="progression.json"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_repeatMode="restart"-->
+<!--        android:visibility="gone"-->
+<!--        app:lottie_speed="1" />-->
+
+    <TextView
+        android:id="@+id/txvLoaderTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/fontmedium"
+        android:text="@string/loader_text1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

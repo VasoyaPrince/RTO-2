@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF960E</color>
+    <color name="colorPrimary">#FF960E</color>
+    <color name="colorPrimaryDark">#FF960E</color>
+
+    <color name="trans">#274C4CFF</color>
+    <color name="white">#ffffff</color>
+    <color name="view">#E2E2E2</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="textcolor">#3F3F3F</color>
+    <color name="lightblack">#525252</color>
+    <color name="black">#2B2B2B</color>
+    <color name="red">#FF0000</color>
+    <color name="colorGrey1">#EAEAEA</color>
+    <color name="colordarkGrey">#8F8F8F</color>
+    <color name="optiontext">#7E7E7E</color>
+</resources>

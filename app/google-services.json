@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "43221944735",
+    "firebase_url": "https://kdm-rto-vehical-information.firebaseio.com",
+    "project_id": "kdm-rto-vehical-information",
+    "storage_bucket": "kdm-rto-vehical-information.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43221944735:android:796b36332a98db02ba95aa",
+        "android_client_info": {
+          "package_name": "anon.rtoinfo.rtovehical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43221944735-b033djlq79rgvsmtmj0790r718vmalqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL0Y_L2dO8Eruq-4S9VwEqCyLccv_N1iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43221944735-b033djlq79rgvsmtmj0790r718vmalqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

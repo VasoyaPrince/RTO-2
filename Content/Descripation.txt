@@ -1,0 +1,39 @@
+RTO Vehicle Information app is a free app to find the registration details such as vehicle details, owner name and address, insurance and much more. Easy to check challan status and driving licence info.
+
+★ RC status:
+⇒ Use the number plate scanner to easily find out RC details and RC status. You can view useful info such as the name & address of the vehicle owner, vehicle model, class, insurance, engine details, fuel type, and much more.
+
+★ Challan Details:
+⇒ Check out the challan status and details of your vehicle. You just need to provide the RC number or DL number or just scan the number plate to find out the challan details.
+
+★ Driving Licence Info:
+⇒ Enter your driving licence number and date of birth to view driving licence details
+
+★ RTO Info:
+⇒ You can easily locate any RTO office in India. Search by city name to find the address, phone number, and website of the RTO office.
+
+This application will help a traveller or passenger in many ways and even in the case of an accident or vehicle-related crime, witnesses usually remember the initial area code letters it is then quite simple to narrow down suspect vehicles to a much smaller number by checking the app without having to know the full number.
+
+rto registration number verification is also required during the sale of a vehicle and transfer of its ownership.
+Also this application usefull as vehicle information in a picnic or a tour spot.
+
+RTO Vehicle Information app is a free app to find the registration details such as vehicle details, owner name and address, insurance and much more. Easy to check challan status and driving licence info. The vehicle information app provides useful car details and bike details such as price, features, specifications, and much more. Find the details of RTO offices. Prepare driving licence exam and take the live RTO test.
+
+● Resale value calculator:
+⇒ Select your vehicle category such as bike, car, scooter, bicycle, etc. and use various filters: vehicle brand, model, kilometre driven, etc.
+
+● Sell car:
+⇒ Provide the required details to get the estimated price
+
+● Bike Insurance:
+⇒ Enter your bike number to view the estimated insurance rate
+
+★ Daily Fuel Price:
+⇒ Set your location to view the updated prices of petrol, diesel, CNG, and LPG
+⇒ You can set the widget to view daily fuel price from your home screen
+
+★ Most trending:
+⇒ Check the vehicle information of actors, actresses, sportspersons, singers, dancers, and other celebrities.
+
+
+Disclaimer: We don't have any collaboration with any state RTO authority. All vehicle information displayed in the app is publicly available on the Parivahan website.
